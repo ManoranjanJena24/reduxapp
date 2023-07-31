@@ -7,10 +7,10 @@ const Shop = () => {
     const dispatch = useDispatch();
     return (
         <div className='container text-center'>
-            <h1>BUY ADIDDAS SHOES: 50RS</h1>
-            <button className="btn btn-primary" onClick={() => { dispatch(actionCreators.withdrawMoney(100)) }}>-</button>
+            <h1>Withdraw/Deposit Just 100 Ruppee Available: 100RS</h1>
+            <button className="btn btn-primary mx-2" onClick={() => { dispatch(actionCreators.withdrawMoney(100)) }}>-</button>
             Add this Item to the cart
-            <button className="btn btn-primary" onClick={() => { dispatch(actionCreators.depositMoney(100)) }}>+</button>
+            <button className="btn btn-primary mx-2" onClick={() => { dispatch(actionCreators.depositMoney(100)) }}>+</button>
         </div>
     )
 }
